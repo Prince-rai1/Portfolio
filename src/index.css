@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* ===== Custom Theme ===== */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Accent palette — indigo-violet-cyan gradient system */
+  --color-accent-400: #818cf8;
+  --color-accent-500: #6366f1;
+  --color-accent-600: #4f46e5;
+
+  --color-violet-400: #a78bfa;
+  --color-violet-500: #8b5cf6;
+
+  --color-cyan-400: #22d3ee;
+  --color-cyan-500: #06b6d4;
+
+  /* Surface colors */
+  --color-surface-950: #0a0a0a;
+  --color-surface-900: #111111;
+  --color-surface-800: #1a1a2e;
+  --color-surface-700: #232340;
+
+  --color-border: #ffffff0d;
+}
+
+/* ===== Base Styles ===== */
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #6366f1 transparent;
+  }
+
+  ::selection {
+    background: #6366f180;
+    color: #fff;
+  }
+
+  body {
+    background-color: #0a0a0a;
+    color: #e5e7eb;
+    overflow-x: hidden;
+  }
+}
+
+/* ===== Animations ===== */
+@layer utilities {
+  /* Typing cursor blink */
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  /* Glow effect for buttons / cards */
+  .glow {
+    box-shadow:
+      0 0 20px #6366f133,
+      0 0 60px #8b5cf61a,
+      0 0 100px #06b6d40d;
+  }
+
+  .glow-sm {
+    box-shadow:
+      0 0 10px #6366f120,
+      0 0 30px #8b5cf610;
+  }
+
+  /* Gradient text helper */
+  .gradient-text {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Background grid pattern */
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Background dot pattern */
+  .bg-dots {
+    background-image: radial-gradient(circle, rgba(99, 102, 241, 0.08) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  /* Glassmorphism card */
+  .glass {
+    background: rgba(17, 17, 17, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  /* Section padding */
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
