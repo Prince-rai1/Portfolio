@@ -4,7 +4,7 @@
  */
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Code2 } from "lucide-react";
 import { navLinks, personalInfo } from "../data/portfolio";
 
 export default function Navbar() {
@@ -63,10 +63,10 @@ export default function Navbar() {
         <a
           href="#home"
           onClick={(e) => handleNavClick(e, "#home")}
-          className="group relative font-mono text-xl font-bold"
+          className="group relative flex items-center justify-center font-mono text-xl font-bold"
         >
-          <span className="gradient-text">{personalInfo.name.charAt(0) !== "[" ? personalInfo.name.split(" ").map(n => n[0]).join("") : "</>"}</span>
-          <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-gradient-to-r from-accent-500 to-cyan-500 transition-all duration-300 group-hover:w-full" />
+          <Code2 size={32} className="text-accent-400 transition-transform duration-300 group-hover:scale-110" />
+          <span className="absolute -bottom-2 left-0 h-0.5 w-0 bg-gradient-to-r from-accent-500 to-cyan-500 transition-all duration-300 group-hover:w-full" />
         </a>
 
         {/* Desktop Links */}

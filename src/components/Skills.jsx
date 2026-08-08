@@ -6,8 +6,9 @@ import { motion } from "framer-motion";
 import {
   SiReact, SiNextdotjs, SiJavascript, SiTypescript, SiHtml5, SiCss,
   SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb, SiGit, SiVscodium,
+  SiSocketdotio, SiGithub, SiCloudinary, SiGoogle, SiMongoose
 } from "react-icons/si";
-import { Rocket } from "lucide-react";
+import { Rocket, LayoutTemplate, Network, Database, Shield } from "lucide-react";
 import { skillsData } from "../data/portfolio";
 import SectionHeading from "./SectionHeading";
 import { fadeInUp, scaleIn, staggerContainer } from "../utils/animations";
@@ -20,6 +21,11 @@ const iconMap = {
   SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb, SiGit,
   SiVisualstudiocode: SiVscodium, // renamed in react-icons v5
   SiAntigravity: Rocket, // Custom: no brand icon, using Rocket as fallback
+  SiSocketdotio, SiGithub, SiCloudinary, SiGoogle, SiMongoose,
+  LuLayoutTemplate: LayoutTemplate,
+  LuNetwork: Network,
+  LuDatabase: Database,
+  LuShield: Shield,
 };
 
 export default function Skills() {

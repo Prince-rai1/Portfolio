@@ -45,7 +45,7 @@ export const aboutData = {
     { label: "Open Source Repos", value: "[X]+" },
     { label: "Cups of Coffee", value: "∞" },
   ],
-  profileImage: null, // Set to a URL or import an image
+  profileImage: "/projects/Prince.png", // Path to profile photo
 };
 
 // ─── Skills Section ─────────────────────────────────────────
@@ -53,34 +53,40 @@ export const skillsData = [
   {
     category: "Frontend",
     skills: [
-      { name: "React", icon: "SiReact", color: "#61DAFB" },
-      { name: "Next.js", icon: "SiNextdotjs", color: "#ffffff" },
       { name: "JavaScript", icon: "SiJavascript", color: "#F7DF1E" },
       { name: "TypeScript", icon: "SiTypescript", color: "#3178C6" },
-      { name: "HTML5", icon: "SiHtml5", color: "#E34F26" },
-      { name: "CSS3", icon: "SiCss3", color: "#1572B6" },
+      { name: "React.js", icon: "SiReact", color: "#61DAFB" },
+      { name: "Next.js", icon: "SiNextdotjs", color: "#ffffff" },
       { name: "Tailwind CSS", icon: "SiTailwindcss", color: "#06B6D4" },
+      { name: "Shadcn UI", icon: "LuLayoutTemplate", color: "#ffffff" },
+      { name: "HTML5", icon: "SiHtml5", color: "#E34F26" },
     ],
   },
   {
-    category: "Backend",
+    category: "Backend & Real-Time",
     skills: [
       { name: "Node.js", icon: "SiNodedotjs", color: "#339933" },
       { name: "Express.js", icon: "SiExpress", color: "#ffffff" },
+      { name: "Socket.io", icon: "SiSocketdotio", color: "#ffffff" },
+      { name: "REST APIs", icon: "LuNetwork", color: "#00FF00" },
     ],
   },
   {
-    category: "Database",
+    category: "Databases & Tools",
     skills: [
       { name: "MongoDB", icon: "SiMongodb", color: "#47A248" },
+      { name: "Mongoose", icon: "SiMongoose", color: "#880000" },
+      { name: "Git", icon: "SiGit", color: "#F05032" },
+      { name: "GitHub", icon: "SiGithub", color: "#ffffff" },
     ],
   },
   {
-    category: "Tools & Others",
+    category: "APIs & Integrations",
     skills: [
-      { name: "Git", icon: "SiGit", color: "#F05032" },
-      { name: "Antigravity", icon: "SiAntigravity", color: "#8b5cf6" },
-      { name: "VS Code", icon: "SiVisualstudiocode", color: "#007ACC" },
+      { name: "Google Gemini API", icon: "SiGoogle", color: "#4285F4" },
+      { name: "Liveblocks", icon: "LuDatabase", color: "#ff4f00" },
+      { name: "BetterAuth", icon: "LuShield", color: "#4f46e5" },
+      { name: "Cloudinary", icon: "SiCloudinary", color: "#F4A261" },
     ],
   },
 ];
