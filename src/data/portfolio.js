@@ -9,7 +9,7 @@
 
 // ─── Personal Info ──────────────────────────────────────────
 export const personalInfo = {
-  name: "Prince Kumar Rai",
+  name: "Prince Rai",
   roles: [
     "Full Stack Developer",
     "MERN Stack Developer",
@@ -35,7 +35,7 @@ export const socialLinks = {
 // ─── About Section ──────────────────────────────────────────
 export const aboutData = {
   bio: [
-    "Hello! I'm Prince Kumar Rai, a detail-oriented Full-Stack Developer (MERN) passionate about building real-time, interactive, and AI-integrated web applications.",
+    "Hello! I'm Prince Rai, a detail-oriented Full-Stack Developer (MERN) passionate about building real-time, interactive, and AI-integrated web applications.",
     "My focus is on creating seamless digital experiences. With a strong foundation in Javascript, React, Node.js, and modern tools like Next.js and Tailwind CSS, I enjoy tackling complex problems and turning them into scalable solutions.",
     "I am currently seeking an internship opportunity to apply my strong programming and problem-solving skills within a dynamic development team.",
   ],
