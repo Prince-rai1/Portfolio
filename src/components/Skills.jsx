@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   SiReact, SiNextdotjs, SiJavascript, SiTypescript, SiHtml5, SiCss,
   SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb, SiGit, SiVscodium,
-  SiSocketdotio, SiGithub, SiCloudinary, SiGoogle, SiMongoose
+  SiSocketdotio, SiGithub, SiCloudinary, SiGoogle, SiMongoose, SiMysql
 } from "react-icons/si";
 import { Rocket, LayoutTemplate, Network, Database, Shield } from "lucide-react";
 import { skillsData } from "../data/portfolio";
@@ -21,7 +21,7 @@ const iconMap = {
   SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb, SiGit,
   SiVisualstudiocode: SiVscodium, // renamed in react-icons v5
   SiAntigravity: Rocket, // Custom: no brand icon, using Rocket as fallback
-  SiSocketdotio, SiGithub, SiCloudinary, SiGoogle, SiMongoose,
+  SiSocketdotio, SiGithub, SiCloudinary, SiGoogle, SiMongoose, SiMysql,
   LuLayoutTemplate: LayoutTemplate,
   LuNetwork: Network,
   LuDatabase: Database,
