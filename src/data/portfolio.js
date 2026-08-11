@@ -76,6 +76,7 @@ export const skillsData = [
     skills: [
       { name: "MongoDB", icon: "SiMongodb", color: "#47A248" },
       { name: "Mongoose", icon: "SiMongoose", color: "#880000" },
+      { name: "MySQL", icon: "SiMysql", color: "#4479A1" },
       { name: "GitHub", icon: "SiGithub", color: "#ffffff" },
     ],
   },
